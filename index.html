@@ -21,7 +21,7 @@
     </div>
     <div class="content">
         <div class="left-col">
-            <h1>THE<br>KING<br>MUSIC</h1>
+            <h1>THE<br>KING<br>CARNIVAL</h1>
         </div>
         <div class="right-col">
             <p>Clich here to listen</p>
@@ -29,9 +29,11 @@
         </div>
     </div>
     </div>
+    <!--SONG-->
     <audio id="mysong">
         <source src="Tu Aake Dekhle.mp3" type="audio/mp3">
     </audio>
+    <!-- JAVASCRIPT-->
     <script>
         var mysong =document.getElementById("mysong");
         var icon =document.getElementById("icon");
@@ -39,11 +41,11 @@
         icon.onclick =function(){
             if(mysong.paused){
                 mysong.play();
-                icon.src="play.png";
+                icon.src="pause.png";
             }
             else{
                 mysong.pause();
-                icon.src="pause.png";   
+                icon.src="play.png";   
             }
             
         }
